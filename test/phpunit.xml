@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         stderr="true"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="true"
+         syntaxCheck="true"
+         bootstrap="../vendor/autoload.php"
+>
+    <testsuites>
+        <testsuite name="Contract">
+            <file>./StringCryptTest.php</file>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="coverage-html" target="report"/>
+    </logging>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
