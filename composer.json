@@ -1,8 +1,8 @@
 {
-    "name": "creolife/stringCrypt",
+    "name": "creoLIFE/stringCrypt",
     "description": "PHP library to encrypt/decrypt strings",
     "homepage": "https://github.com/creoLIFE/stringCrypt",
-    "version": "1.0.0.0",
+    "version": "1.1",
     "author": [
         {
             "name": "Miroslaw Ratman"
