@@ -1,7 +1,7 @@
 <?php
 namespace creoLIFE\Helper;
 
-class StringCrypt
+class StringCryptUnique
 {
     const DELIMETER = '|';
 
