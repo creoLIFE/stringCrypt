@@ -2,5 +2,22 @@
 
 ## PHP library to encrypt/decrypt strings using Rijndael-256, MCrypt with Cipher Block Chaining (CBC) mode.
 
+## Usage
 
-Originaly based on: https://www.warpconduit.net/2013/04/14/highly-secure-data-encryption-decryption-made-easy-with-php-mcrypt-rijndael-256-and-cbc/
+### Unique encoded key version
+```
+use creoLIFE\Helper\StringCryptSimple;
+
+$stringCrypt = new StringCryptUnique('d0a7e7997b6d5fcd55f4b5c32611b87cd923e88837b63bf2941ef819dc8ca28a');
+$encrypted = $stringCrypt->encrypt($someString);
+$decrypted = $stringCrypt->decrypt($encrypted);
+```
+
+### Simple static encoded key version
+```
+use creoLIFE\Helper\StringCryptSimple;
+
+$stringCrypt = new StringCryptSimple('some_hashing_text');
+$encrypted = $stringCrypt->encrypt($someString);
+$decrypted = $stringCrypt->decrypt($encrypted);
+```
