@@ -5,7 +5,7 @@ PHP library to encrypt/decrypt strings using Rijndael-256, MCrypt with Cipher Bl
 
 ### Unique encoded key version
 ```
-use creoLIFE\Helper\StringCryptSimple;
+use creoLIFE\Helper\StringCryptUnique;
 
 $someString = "Some nice text to encrypt/decrypt !";
 
