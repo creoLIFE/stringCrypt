@@ -1,6 +1,6 @@
 # stringCrypt
 
-## PHP library to encrypt/decrypt strings using Rijndael-256, MCrypt with Cipher Block Chaining (CBC) mode.
+### PHP library to encrypt/decrypt strings using Rijndael-256, MCrypt with Cipher Block Chaining (CBC) mode.
 
 ## Usage
 
@@ -9,6 +9,9 @@
 use creoLIFE\Helper\StringCryptSimple;
 
 $someString = "Some nice text to encrypt/decrypt !";
+
+//The hashing key must have 32 or 64 characters length
+//In this example 64: d0a7e7997b6d5fcd55f4b5c32611b87cd923e88837b63bf2941ef819dc8ca28a
 
 $stringCrypt = new StringCryptUnique('d0a7e7997b6d5fcd55f4b5c32611b87cd923e88837b63bf2941ef819dc8ca28a');
 $encrypted = $stringCrypt->encrypt($someString);
