@@ -11,9 +11,25 @@ class StringCryptUnique
     protected $encriptionKey;
 
     /**
-     * StringCrypt constructor.
+     * @return string
+     */
+    public function getEncriptionKey()
+    {
+        return $this->encriptionKey;
+    }
+
+    /**
+     * @param string $encriptionKey
+     */
+    public function setEncriptionKey($encriptionKey)
+    {
+        $this->encriptionKey = $encriptionKey;
+    }
+
+    /**
+     * StringCryptUnique constructor.
      * @param $encriptionKey
-     * @throws Exception
+     * @throw Exception
      */
     public function __construct($encriptionKey)
     {

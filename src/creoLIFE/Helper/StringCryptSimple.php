@@ -9,6 +9,22 @@ class StringCryptSimple
     protected $encriptionKey;
 
     /**
+     * @return string
+     */
+    public function getEncriptionKey()
+    {
+        return $this->encriptionKey;
+    }
+
+    /**
+     * @param string $encriptionKey
+     */
+    public function setEncriptionKey($encriptionKey)
+    {
+        $this->encriptionKey = $encriptionKey;
+    }
+
+    /**
      * StringCrypt constructor.
      * @param $encriptionKey
      * @throws Exception
